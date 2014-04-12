@@ -6,8 +6,10 @@ import urllib2
 import json
 from optparse import OptionParser
 
-KINO_SUGGEST_URL = 'http://kino.local/suggestion.php?q='
-KINO_DETAIL_URL = 'http://kino.local/api.php?format=ajax'
+# KINO_SUGGEST_URL = 'http://kino.local/suggestion.php?q='
+KINO_SUGGEST_URL = 'http://10.1.5.21/suggestion.php?q='
+# KINO_DETAIL_URL = 'http://kino.local/api.php?format=ajax'
+KINO_DETAIL_URL = 'http://10.1.5.21/api.php?format=ajax'
 PAYLOAD_TEMPLATE = 'action[0]=Video.getMovie&movie_id[0]='
 
 def get_download_links(movie_id):
